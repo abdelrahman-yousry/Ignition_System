@@ -1,0 +1,29 @@
+/*
+ * Systick_cfg.h
+ *
+ *  Created on: Apr 14, 2022
+ *      Author: Abdelrahman Yousry
+ */
+
+#ifndef SYSTICK_CFG_H_
+#define SYSTICK_CFG_H_
+
+/*YOUR OPTIONS:
+ * 1-AHB_CLOCK_DEVIDED_BY_8
+ * 2-AHB_PROCESSOR_CLOCK
+ * */
+#define CLOCK_SOURCE	AHB_PROCESSOR_CLOCK
+/*YOUR OPTIONS:
+ * 1-SYSTICK_INTERRUPT_ENABLE
+ * 2-SYSTICK_INTERRUPT_DISABLE
+ * */
+#define SYSTICK_INTERRUPT	SYSTICK_INTERRUPT_ENABLE
+/*YOUR OPTIONS:
+ * 1-SYSTICK_ENABLED
+ * 2-SYSTICK_DISAPLED
+ * */
+#define SYSTICK_CONTROL		SYSTICK_ENABLED
+/*The clock of the systick*/
+#define SYSTEM_CLOCK_SOURCE	16000000
+
+#endif /* SYSTICK_CFG_H_ */
